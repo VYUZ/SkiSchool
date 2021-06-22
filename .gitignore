@@ -14,5 +14,5 @@ browsersync.bat
 # Source
 src/
 
-# local fonts not needed
+# local fonts not needed, i use google fonts
 fonts/
