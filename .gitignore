@@ -13,3 +13,6 @@ browsersync.bat
 
 # Source
 src/
+
+# local fonts
+fonts/
