@@ -19,18 +19,18 @@
 }
 @font-face {
   font-family: "Muli Light";
-  src: url("../fonts/muli_light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/muli_light.woff2") format("woff2");
+  src: url("../fonts/muli_light.woff2") format("woff2"),
+    url("../fonts/muli_light.woff") format("woff");
 }
 @font-face {
   font-family: "Muli Bold";
-  src: url("../fonts/muli_bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/muli_bold.woff2") format("woff2");
+  src: url("../fonts/muli_bold.woff2") format("woff2"),
+    url("../fonts/muli_bold.woff") format("woff");
 }
 @font-face {
   font-family: "Muli SemiBold";
-  src: url("../fonts/muli_semibold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/muli_semibold.woff2") format("woff2");
+  src: url("../fonts/muli_semibold.woff2") format("woff2"),
+    url("../fonts/muli_semibold.woff") format("woff");
 } */
 /* fonts end */
 
@@ -47,31 +47,173 @@ html {
 body {
   margin: 0;
   padding: 0;
+
   line-height: 1.2;
   font-family: "Catamaran", sans-serif;
   font-family: "Mulish", sans-serif;
-  font-size: 48px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #565656;
+  background-color: #f7f7f7;
 }
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* Header styles start */
-
-/* Header styles end */
-
-/* Main styles start */
-main {
-  background: url("../img/jumbotron.jpg");
-  background-repeat: no-repeat;
-  height: 100vh;
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
-/* Main styles end */
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container-layout {
+  width: 1680px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.between {
+  justify-content: space-between;
+}
+/* HEADER START */
+.header {
+  /* height: 95px; */
+  position: sticky;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  background: rgba(0, 100, 255, 0.5);
+}
+.header__logo {
+  margin-top: 30px;
+}
+.header__logo-pic {
+  width: 164px;
+}
+.header__nav {
+  width: 40%;
+  margin-top: 50px;
+}
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/* Footer styles start */
+/* HEADER END */
 
-/* Footer styles end */
+/* MAIN START */
+
+/* INTRO SECTION START */
+.intro {
+  position: relative;
+  background: radial-gradient(at center center, white, blue);
+  height: 1075px;
+  margin-top: -102px;
+  max-width: 1920px;
+  margin: 0 auto 50px auto;
+}
+.intro__pic {
+  position: absolute;
+  top: 340px;
+}
+.intro__title {
+  font-family: "Catamaran", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fefefe;
+  text-transform: uppercase;
+  padding-top: 165px;
+  text-align: center;
+}
+.intro__slogan {
+  font-family: "Catamaran", sans-serif;
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 1;
+  color: #fefefe;
+  text-transform: uppercase;
+  text-align: center;
+}
+.intro__desc {
+  position: absolute;
+  top: 560px;
+  left: 328px;
+  width: 33%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #fff;
+}
+.intro__link {
+  position: absolute;
+  top: 675px;
+  left: 328px;
+  background-color: #ff690f;
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 18px 44px;
+  border-radius: 8px;
+}
+/* INTRO SECTION END */
+/* OFFER SECTION START */
+.offer {
+}
+.offer__title {
+  text-transform: uppercase;
+  color: #333;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  font-stretch: wider;
+}
+.offer__desc {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.row {
+}
+
+/* OFFER SECTION END */
+/* GALLERY SECTION START */
+
+/* GALLERY SECTION END */
+/* CREW SECTION START */
+
+/* CREW SECTION END */
+/* JUMBOTRONE  SECTION STAR */
+
+/* JUMBOTRONE  SECTION END */
+/* TESTIMONIALS SECTION START */
+
+/* TESTIMONIALS SECTION END */
+/* CONTACTS SECTION START */
+
+/* CONTACTS SECTION END */
+/* MAIN END */
+
+/* FOOTER START */
+
+/* FOOTER END */
 /* @media */
 /* @media */
 /* @media */
