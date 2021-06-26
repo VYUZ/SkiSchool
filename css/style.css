@@ -53,13 +53,24 @@ body {
   font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.8;
   color: #565656;
   background-color: #f7f7f7;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+.title-h2 {
+  text-transform: uppercase;
+  color: #333;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
 }
 a {
   text-decoration: none;
@@ -81,6 +92,7 @@ a {
 .container {
   width: 1260px;
   margin: 0 auto;
+  border: 1px solid black;
 }
 .row {
   display: flex;
@@ -121,11 +133,23 @@ a {
 /* INTRO SECTION START */
 .intro {
   position: relative;
-  background: radial-gradient(at center center, white, blue);
+  /* background: radial-gradient(at center center, white, blue); */
+  background-color: #235498;
   height: 1075px;
   margin-top: -102px;
   max-width: 1920px;
   margin: 0 auto 50px auto;
+}
+.intro::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50em 30em, rgba(166, 220, 236, 0.5), rgba(35, 84, 152, 0.7));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 .intro__pic {
   position: absolute;
@@ -135,7 +159,7 @@ a {
   font-family: "Catamaran", sans-serif;
   font-size: 30px;
   font-weight: 900;
-  color: #fefefe;
+  color: #04e5f5;
   text-transform: uppercase;
   padding-top: 165px;
   text-align: center;
@@ -145,7 +169,7 @@ a {
   font-size: 250px;
   font-weight: 900;
   line-height: 1;
-  color: #fefefe;
+  color: #04e5f5;
   text-transform: uppercase;
   text-align: center;
 }
@@ -153,8 +177,7 @@ a {
   position: absolute;
   top: 560px;
   left: 328px;
-  width: 33%;
-  font-family: "Mulish", sans-serif;
+  width: 35%;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.8;
@@ -172,39 +195,205 @@ a {
   padding: 18px 44px;
   border-radius: 8px;
 }
+.intro__link:hover {
+  opacity: 0.75;
+}
 /* INTRO SECTION END */
 /* OFFER SECTION START */
 .offer {
-}
-.offer__title {
-  text-transform: uppercase;
-  color: #333;
-  font-family: "Catamaran", sans-serif;
-  font-weight: 900;
-  font-size: 60px;
-  font-stretch: wider;
+  margin-bottom: 155px;
 }
 .offer__desc {
-  font-family: "Mulish", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
   line-height: 1.8;
+  width: 74%;
+  text-align: center;
+  margin: 0 auto 55px auto;
 }
-.row {
+.offer__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-pic {
+  margin-bottom: 40px;
+  min-height: 212px;
+}
+.card-body {
+  text-align: center;
+}
+.card-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.card-desc {
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0 auto 30px auto;
+  width: 65%;
+}
+.card-btn {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ff690f;
+  border-radius: 8px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  width: 150px;
+  padding: 14px 20px;
+  margin: 0 auto;
+}
+.card-btn:hover {
+  opacity: 0.75;
 }
 
 /* OFFER SECTION END */
 /* GALLERY SECTION START */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  margin-bottom: 155px;
+}
+.gallery__pic-wrap {
+  overflow: hidden;
+}
+.gallery__pic {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.15s all;
+}
 
+.gallery__link:hover .gallery__pic {
+  transform: scale(1.05);
+}
 /* GALLERY SECTION END */
 /* CREW SECTION START */
-
+.crew {
+  margin-bottom: 160px;
+}
+.card-crew__pic {
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+.card-crew__body {
+  text-align: center;
+  color: #565656;
+}
+.card-crew__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.card-crew__desc {
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+}
 /* CREW SECTION END */
 /* JUMBOTRONE  SECTION STAR */
+.jumbotrone {
+  background: url(../img/jumbotron.jpg) no-repeat;
+  height: 1080px;
+}
+.jumbotrone h2 {
+  margin-top: 230px;
+  margin-bottom: 54px;
+  width: 55%;
+  text-align: left;
+}
+.jumbotrone__text {
+  width: 64%;
+  line-height: 32px;
+  margin-bottom: 75px;
+}
+.jumbotrone__counts {
+  font-weight: 600;
+}
+.jumbotrone__counts p {
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  color: #ff690f;
+}
+.jumbotrone__item {
+  margin-right: 100px;
+}
+.jumbotrone__item:last-of-type {
+  margin-right: 0;
+}
 
 /* JUMBOTRONE  SECTION END */
 /* TESTIMONIALS SECTION START */
-
+.testimonials {
+  text-align: center;
+}
+.testimonials__title {
+  margin-top: 160px;
+  margin-bottom: 55px;
+}
+.testimonials__card {
+  text-align: center;
+}
+.testimonials__card-ava {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.testimonials__card-text {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 48px;
+  quotes: "“" "„";  
+}
+.testimonials__card-text::before {
+  /* content: url(../img/testi-quot.png);    */
+  position: absolute;
+  content: "\201c";
+  font-size: 100px;
+  top: -50px;
+  left: 500px;
+  margin-right: 20px;
+}
+.testimonials__card-text::after {
+  position: absolute;
+  content: "\201d";
+  font-size: 100px;
+  line-height: 0.1;
+bottom: 6px;
+right: 500px;
+}
+.testimonials__desc {
+  line-height: 32px;
+  width: 70%;
+  margin: 0 auto 50px auto;
+}
+.testimonials__circles {
+  width: 135px;
+  justify-content: space-between;
+  margin: 0 auto 160px auto;
+}
+.testimonials__circle {
+  background-color: #565656;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.testimonials-active {
+  background-color: #ff690f;
+}
 /* TESTIMONIALS SECTION END */
 /* CONTACTS SECTION START */
 
