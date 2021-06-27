@@ -87,12 +87,10 @@ a {
 .container-layout {
   width: 1680px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 .container {
   width: 1260px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 .row {
   display: flex;
@@ -101,6 +99,64 @@ a {
 .between {
   justify-content: space-between;
 }
+.white {
+  color: #fff;
+}
+.btn {
+  color: #fff;
+  background-color: #ff690f;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.btn-anim1::after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+}
+.btn-anim1:hover::after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-anim2 {
+  transition: all 0.2s linear 0s;
+  display: inline-block;
+}
+.btn-anim2::before {
+  content: "˃";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 50% 50% 0;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+.btn-anim2:hover {
+  text-indent: 30px;
+}
+.btn-anim2:hover::before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+
 /* HEADER START */
 .header {
   /* height: 95px; */
@@ -109,7 +165,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 4;
-  background: rgba(0, 100, 255, 0.5);
+  background: rgba(34, 83, 159, 1);
 }
 .header__logo {
   margin-top: 30px;
@@ -124,8 +180,27 @@ a {
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
-
+.header__link {
+  position: relative;
+}
+.header__link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgb(131, 155, 204);
+  height: 1px;
+  transition: all 0.5s;
+}
+.header__link:hover:after {
+  width: 100%;
+}
 /* HEADER END */
 
 /* MAIN START */
@@ -163,6 +238,7 @@ a {
   text-transform: uppercase;
   padding-top: 165px;
   text-align: center;
+  margin-bottom: 25px;
 }
 .intro__slogan {
   font-family: "Catamaran", sans-serif;
@@ -183,20 +259,12 @@ a {
   line-height: 1.8;
   color: #fff;
 }
-.intro__link {
+.intro__btn {
   position: absolute;
   top: 675px;
   left: 328px;
-  background-color: #ff690f;
-  font-family: "Catamaran", sans-serif;
   font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
   padding: 18px 44px;
-  border-radius: 8px;
-}
-.intro__link:hover {
-  opacity: 0.75;
 }
 /* INTRO SECTION END */
 /* OFFER SECTION START */
@@ -240,19 +308,10 @@ a {
   width: 65%;
 }
 .card-btn {
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #ff690f;
-  border-radius: 8px;
-  font-family: "Catamaran", sans-serif;
-  font-weight: 700;
   font-size: 15px;
   width: 150px;
   padding: 14px 20px;
   margin: 0 auto;
-}
-.card-btn:hover {
-  opacity: 0.75;
 }
 
 /* OFFER SECTION END */
@@ -356,7 +415,7 @@ a {
   font-weight: 900;
   font-size: 18px;
   margin-bottom: 48px;
-  quotes: "“" "„";  
+  quotes: "“" "„";
 }
 .testimonials__card-text::before {
   /* content: url(../img/testi-quot.png);    */
@@ -372,8 +431,8 @@ a {
   content: "\201d";
   font-size: 100px;
   line-height: 0.1;
-bottom: 6px;
-right: 500px;
+  bottom: 6px;
+  right: 500px;
 }
 .testimonials__desc {
   line-height: 32px;
@@ -396,7 +455,9 @@ right: 500px;
 }
 /* TESTIMONIALS SECTION END */
 /* CONTACTS SECTION START */
-
+#contacts {
+  height: 100vh;
+}
 /* CONTACTS SECTION END */
 /* MAIN END */
 
