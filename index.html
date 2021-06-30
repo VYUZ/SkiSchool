@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,12 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />  -->
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      rel="stylesheet"
+    />
     <!-- Fonts end-->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" as="style" />
@@ -67,7 +73,7 @@
                 <a href="#testimonials" class="header__link">Testimonials</a>
               </li>
               <li class="header__nav-item">
-                <a href="#contacts" class="header__link">Contact Us</a>
+                <a href="#footer" class="header__link">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -79,7 +85,7 @@
     <!--MAIN SECTION START-->
     <main>
       <!--INTRO SECTION START-->
-      <section class="intro wrapper">
+      <section class="intro wrapper" id="intro">
         <img src="./img/headerfon.png" alt="" class="intro__pic" />
         <div class="container">
           <h1 class="intro__title">SKI & SNOWBOARD school</h1>
@@ -93,46 +99,44 @@
       </section>
       <!-- INTRO SECTION END-->
       <!--OFFER SECTION START-->
-      <section class="offer">
-        <div class="container">
-          <h2 class="title-h2">WHAT WE OFFER</h2>
-          <p class="offer__desc">
-            Skiing and snowboarding still rank among the undisputed winter sport highlights for all ages and ability
-            levels. The perfectly groomed ski slopes makes a real heaven for skiers and riders. Our professional ski and
-            snowboard instructors can show you all the little details while improving your skiing techniques and riding
-            skills.
-          </p>
-          <div class="offer__cards">
-            <div class="card">
-              <img class="card-pic" src="./img/svg/offer-1.svg" alt="" />
-              <div class="card-body">
-                <div class="card-title">NEW TO SKIING?</div>
-                <div class="card-desc">PRIVATE LESSONS FOR BEGINNERS</div>
-                <a href="#!" class="card-btn btn btn-anim2">from $250</a>
-              </div>
+      <section class="offer container" id="offer">
+        <h2 class="title-h2">WHAT WE OFFER</h2>
+        <p class="offer__desc">
+          Skiing and snowboarding still rank among the undisputed winter sport highlights for all ages and ability
+          levels. The perfectly groomed ski slopes makes a real heaven for skiers and riders. Our professional ski and
+          snowboard instructors can show you all the little details while improving your skiing techniques and riding
+          skills.
+        </p>
+        <div class="offer__cards">
+          <div class="card">
+            <img class="card-pic" src="./img/svg/offer-1.svg" alt="" />
+            <div class="card-body">
+              <div class="card-title">NEW TO SKIING?</div>
+              <div class="card-desc">PRIVATE LESSONS FOR BEGINNERS</div>
+              <a href="#!" class="card-btn btn btn-anim2">from $250</a>
             </div>
-            <div class="card">
-              <img class="card-pic" src="./img/svg/offer-2.svg" alt="" />
-              <div class="card-body">
-                <div class="card-title">NEED A CREW?</div>
-                <div class="card-desc">GROUP LESSONS FOR BEGINNERS</div>
-                <a href="#!" class="card-btn btn btn-anim2">from $150</a>
-              </div>
+          </div>
+          <div class="card">
+            <img class="card-pic" src="./img/svg/offer-2.svg" alt="" />
+            <div class="card-body">
+              <div class="card-title">NEED A CREW?</div>
+              <div class="card-desc">GROUP LESSONS FOR BEGINNERS</div>
+              <a href="#!" class="card-btn btn btn-anim2">from $150</a>
             </div>
-            <div class="card">
-              <img class="card-pic" src="./img/svg/offer-3.svg" alt="" />
-              <div class="card-body">
-                <div class="card-title">WANNA MORE?</div>
-                <div class="card-desc">ADVANCED GROUP LESSONS</div>
-                <a href="#!" class="card-btn btn btn-anim2">from $450</a>
-              </div>
+          </div>
+          <div class="card">
+            <img class="card-pic" src="./img/svg/offer-3.svg" alt="" />
+            <div class="card-body">
+              <div class="card-title">WANNA MORE?</div>
+              <div class="card-desc">ADVANCED GROUP LESSONS</div>
+              <a href="#!" class="card-btn btn btn-anim2">from $450</a>
             </div>
           </div>
         </div>
       </section>
       <!--OFFER SECTION END-->
       <!--GALLERY SECTION START-->
-      <section class="gallery wrapper">
+      <section class="gallery wrapper" id="gallery">
         <div class="gallery__col">
           <a href="#!" class="gallery__link">
             <div class="gallery__pic-wrap">
@@ -177,7 +181,7 @@
       </section>
       <!--GALLERY SECTION END-->
       <!--CREW SECTION START-->
-      <section class="crew container">
+      <section class="crew container" id="crew">
         <h2 class="title-h2">MEET OUR CREW</h2>
         <div class="row between">
           <a href="#!">
@@ -250,43 +254,95 @@
       </section>
       <!--JUMBOTRONE  SECTION END-->
       <!--TESTIMONIALS SECTION START-->
-      <section class="testimonials container">
+      <section class="testimonials container" id="testimonials">
         <h2 class="title-h2 testimonials__title">TESTIMONIALS</h2>
-        <figure class="testimonials__card">
-          <img src="./img/testi-avat.jpg" alt="" class="testimonials__card-ava" />
-          <figcaption class="testimonials__card-text">alexa smith</figcaption>
-        </figure>
-        <p class="testimonials__desc">
-          Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent
-          taciti sociosqu ad litora torquent per conubia nostra.
-        </p>
-        <div class="testimonials__circles row">
+        <div class="testimonials__slider">
+          <input type="radio" name="slider" title="slide1" checked="checked" class="testimonials__slider-nav" />
+          <input type="radio" name="slider" title="slide2" class="testimonials__slider-nav" />
+          <input type="radio" name="slider" title="slide3" class="testimonials__slider-nav" />
+          <input type="radio" name="slider" title="slide4" class="testimonials__slider-nav" />
+          <div class="testimonials__slider-inner">
+            <figure class="testimonials__card">
+              <img src="./img/testi-avat.jpg" alt="" class="testimonials__card-ava" />
+              <figcaption class="testimonials__card-text">
+                alexa smith
+                <p class="testimonials__desc">
+                  Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class
+                  aptent taciti sociosqu ad litora torquent per conubia nostra.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="testimonials__card">
+              <img src="./img/crew-1.jpg" alt="" class="testimonials__card-ava" />
+              <figcaption class="testimonials__card-text">
+                Lorem ipsum
+                <p class="testimonials__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellat, dolorum quae dicta aliquam
+                  delectus.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="testimonials__card">
+              <img src="./img/crew-2.jpg" alt="" class="testimonials__card-ava" />
+              <figcaption class="testimonials__card-text">
+                Sit amet consectetur
+                <p class="testimonials__desc">
+                  us ex, animi est eos, ut accusantium sit repellendus quos maxime doloribus consectetur minus
+                  temporibus
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="testimonials__card">
+              <img src="./img/crew-3.jpg" alt="" class="testimonials__card-ava" />
+              <figcaption class="testimonials__card-text">
+                JAMES BILLINGS
+                <p class="testimonials__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis accusantium magnam, minima, iure
+                  distinctio quod eos asperiores facilis veniam quam sequi p Voluptate?.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- <div class="testimonials__circles row">
           <div class="testimonials__circle testimonials-active"></div>
           <div class="testimonials__circle"></div>
           <div class="testimonials__circle"></div>
           <div class="testimonials__circle"></div>
           <div class="testimonials__circle"></div>
+        </div> -->
         </div>
       </section>
       <!--TESTIMONIALS SECTION END-->
-      <!--CONTACTS SECTION START-->
-      <section id="contacts">
-        <h2 class="title-h2 white">contacts us</h2>
-        <h1>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Гор, все! Семь рукопись точках предупреждал путь океана вдали реторический за щеке не своего безопасную снова знаках домах, раз буквоград?</h1>
-        <h2>Дал грустный коварных семантика переулка путь коварный, по всей запятых. Бросил первую над одна, они толку прямо необходимыми маленький решила повстречался, там она взгляд, алфавит свою сбить ручеек маленькая мир строчка.</h2>
-        <h3>Коварный продолжил то безопасную? Свое продолжил предупредила пунктуация родного снова то не свою что проектах страну, эта над безопасную реторический дал правилами за предупреждал семантика залетают букв повстречался страна текстами.</h3>
-        <h4>Меня бросил безорфографичный ручеек. Рекламных переписывается реторический последний переписали языком ручеек. Которое подзаголовок повстречался парадигматическая родного рекламных использовало возвращайся переписали образ взгляд заглавных, свой все знаках великий вопрос дорогу на берегу!</h4>
-        <h5>Всемогущая толку если осталось несколько залетают она, собрал до, взобравшись рыбного однажды, дорогу он заманивший переулка свой продолжил! Проектах заголовок злых она, безопасную страна бросил языком свой свою маленький продолжил?</h5>
-        <h6>Маленький ведущими ручеек необходимыми осталось на берегу, собрал щеке вдали пор всеми которой решила дороге дорогу подзаголовок! Текст которой своего послушавшись собрал семь последний, рот строчка ручеек щеке, что заглавных дал.</h6>
-      </section>
-      <!--CONTACTS SECTION END -->
     </main>
     <!--MAIN SECTION END-->
 
     <!--FOOTER SECTION START-->
-    <div class="wrapper"></div>
+    <footer class="footer wrapper row" id="footer">
+      <div class="contacts">
+        <h2 class="title-h2 white">contacts us</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item"><i class="fa fa-phone"></i><span>+43 662 123456</span></li>
+          <li class="contacts__item">
+            <i class="fa fa-map-marker" aria-hidden="true"></i><span>Paracelsusstraße 26, 5020 Salzburg, Austria</span>
+          </li>
+          <li class="contacts__item">
+            <i class="fa fa-envelope" aria-hidden="true"></i><span>INBOX@MOUNTain.COM</span>
+          </li>
+          <li class="contacts__item">
+            <i class="fa fa-clock"></i><span>OPEN HOURS: 8.00 AM – 10.00 PM MONDAY - SUNDAY</span>
+          </li>
+          <li class="footer__social">
+            <i class="fa fa-twitter"></i><i class="fa fa-facebook" aria-hidden="true"></i
+            ><i class="fa fa-instagram" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="map">111</div>
+    </footer>
     <!--FOOTER SECTION END-->
 
-    <script src="./js/main.js" type="module"></script>
+    <!-- <script src="./js/main.js" type="module"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/b6a85fcd25.js" crossorigin="anonymous"></script> -->
   </body>
 </html>

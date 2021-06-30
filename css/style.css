@@ -32,6 +32,14 @@
   src: url("../fonts/muli_semibold.woff2") format("woff2"),
     url("../fonts/muli_semibold.woff") format("woff");
 } */
+/* @font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+    url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+    unicode-range: f095, f041, f0e0, f017;
+} */
 /* fonts end */
 
 html {
@@ -213,7 +221,7 @@ a {
   height: 1075px;
   margin-top: -102px;
   max-width: 1920px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 90px auto;
 }
 .intro::before {
   display: block;
@@ -275,7 +283,7 @@ a {
   line-height: 1.8;
   width: 74%;
   text-align: center;
-  margin: 0 auto 55px auto;
+  margin: 50px auto 70px auto;
 }
 .offer__cards {
   display: flex;
@@ -320,7 +328,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 auto;
-  margin-bottom: 155px;
+  margin-bottom: 160px;
 }
 .gallery__pic-wrap {
   overflow: hidden;
@@ -339,10 +347,63 @@ a {
 .crew {
   margin-bottom: 160px;
 }
+.crew h2 {
+  margin-bottom: 60px;
+}
+.card-crew {
+  position: relative;
+  overflow: hidden;
+}
 .card-crew__pic {
   border-radius: 50%;
   margin-bottom: 25px;
 }
+.card-crew::before {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.card-crew:hover::before {
+  -webkit-animation: circle 0.5s;
+  animation: circle 0.5s;
+}
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
 .card-crew__body {
   text-align: center;
   color: #565656;
@@ -365,7 +426,7 @@ a {
   height: 1080px;
 }
 .jumbotrone h2 {
-  margin-top: 230px;
+  padding-top: 230px;
   margin-bottom: 54px;
   width: 55%;
   text-align: left;
@@ -401,12 +462,98 @@ a {
   margin-top: 160px;
   margin-bottom: 55px;
 }
+.testimonials__slider {
+  position: relative;
+  min-height: 550px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.testimonials__slider-nav {
+  width: 30px;
+  height: 30px;
+  margin: 12rem 20px;
+  border-radius: 50%;
+  z-index: 10;
+  outline-offset: -10px;
+  box-shadow: 0 0 0 0 red, 0 0 0 0 blue;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: grey;
+}
+.testimonials__slider-nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+  animation: check 0.4s linear forwards;
+  background-color: orange;
+}
+.testimonials__slider-nav:checked:nth-of-type(1) ~ .testimonials__slider-inner {
+  left: 0%;
+}
+.testimonials__slider-nav:checked:nth-of-type(2) ~ .testimonials__slider-inner {
+  left: -97%;
+}
+.testimonials__slider-nav:checked:nth-of-type(3) ~ .testimonials__slider-inner {
+  left: -195%;
+}
+.testimonials__slider-nav:checked:nth-of-type(4) ~ .testimonials__slider-inner {
+  left: -291%;
+}
+@-webkit-keyframes check {
+  50% {
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+@keyframes check {
+  50% {
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px orange;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 orange;
+  }
+}
+.testimonials__slider-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 650%;
+  height: 100%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
 .testimonials__card {
   text-align: center;
+  flex-basis: 15%;
 }
 .testimonials__card-ava {
   border-radius: 50%;
   margin-bottom: 20px;
+  max-width: 130px;
 }
 .testimonials__card-text {
   position: relative;
@@ -417,9 +564,15 @@ a {
   margin-bottom: 48px;
   quotes: "“" "„";
 }
+.testimonials__card-text::before,
+.testimonials__card-text::after {
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(197, 197, 197);
+  font-size: 100px;
+}
 .testimonials__card-text::before {
   /* content: url(../img/testi-quot.png);    */
-  position: absolute;
   content: "\201c";
   font-size: 100px;
   top: -50px;
@@ -427,21 +580,24 @@ a {
   margin-right: 20px;
 }
 .testimonials__card-text::after {
-  position: absolute;
   content: "\201d";
-  font-size: 100px;
   line-height: 0.1;
-  bottom: 6px;
+  bottom: 66px;
   right: 500px;
 }
 .testimonials__desc {
   line-height: 32px;
   width: 70%;
+  text-transform: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   margin: 0 auto 50px auto;
+  text-align: center;
 }
-.testimonials__circles {
-  width: 135px;
-  justify-content: space-between;
+
+/* .testimonials__circles {
+  justify-content: center;
   margin: 0 auto 160px auto;
 }
 .testimonials__circle {
@@ -449,14 +605,35 @@ a {
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  margin: 0 8px;
 }
 .testimonials-active {
   background-color: #ff690f;
-}
+} */
 /* TESTIMONIALS SECTION END */
 /* CONTACTS SECTION START */
-#contacts {
+#footer {
   height: 100vh;
+  margin: 0 auto;
+}
+.contacts {
+  background-color: #2f2f2f;
+  flex-basis: 30%;
+}
+.white {
+}
+.contacts__list {
+}
+.contacts__item {
+  font-size: 18px;
+  color: #ff690f;
+}
+.contacts__item span {
+  font-size: 18px;
+  color: #565656;
+}
+.footer__social {
+  color: #ff690f;
 }
 /* CONTACTS SECTION END */
 /* MAIN END */
