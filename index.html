@@ -35,8 +35,8 @@
     <link href="./css/fontawesom.all.min.css" rel="stylesheet" />
     <!-- Fonts end-->
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" as="style" />
-    <!-- <link rel="stylesheet" href="./css/style.min.css" as="style" /> -->
+    <!-- <link rel="stylesheet" href="./css/style.css" as="style" /> -->
+    <link rel="stylesheet" href="./css/style.min.css" as="style" />
     <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /> -->
     <!-- <link rel="manifest" href="./manifest.json" /> -->
     <title>SKI & SNOWBOARD school</title>
@@ -45,40 +45,45 @@
   <body>
     <!--HEADER START-->
     <header class="header wrapper">
-      <div class="container-layout">
-        <div class="row between">
-          <div class="header__logo">
-            <a href="#!" class="header__logo-link"
-              ><img
-                class="header__logo-pic"
-                src="./img/headerlogo.png"
-                alt="SKI & SNOWBOARD school"
-                title="SKI & SNOWBOARD school"
-            /></a>
-          </div>
-          <nav class="header__nav">
-            <ul class="header__nav-list between">
-              <li class="header__nav-item">
-                <a href="#intro" class="header__link">Home</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#offer" class="header__link">What We Offer</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#gallery" class="header__link">Gallery</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#crew" class="header__link">About Us</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#testimonials" class="header__link">Testimonials</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#footer" class="header__link">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="container-layout row between">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link"
+            ><img
+              class="header__logo-pic"
+              src="./img/headerlogo.png"
+              alt="SKI & SNOWBOARD school"
+              title="SKI & SNOWBOARD school"
+          /></a>
         </div>
+
+        <input id="burger" type="checkbox" />
+        <label class="header__burger" for="burger">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </label>
+        <nav class="header__nav">
+          <ul class="header__nav-list between">
+            <li class="header__nav-item">
+              <a href="#intro" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#offer" class="header__nav-link">What We Offer</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#gallery" class="header__nav-link">Gallery</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#crew" class="header__nav-link">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#testimonials" class="header__nav-link">Testimonials</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#footer" class="header__nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!--HEADER END-->
@@ -87,7 +92,7 @@
     <main>
       <!--INTRO SECTION START-->
       <section class="intro wrapper" id="intro">
-        <img src="./img/headerfon.png" alt="" class="intro__pic" />
+        <img src="./img/headerfon-min.png" alt="" class="intro__pic" />
         <div class="container">
           <h1 class="intro__title">SKI & SNOWBOARD school</h1>
           <div class="intro__slogan">STAY&SKI</div>
@@ -141,41 +146,41 @@
         <div class="gallery__col">
           <a href="#!" class="gallery__link">
             <div class="gallery__pic-wrap">
-              <img class="gallery__pic" src="./img/gal-1.jpg" alt="gal-1" title="gal-1" />
+              <img class="gallery__pic" src="./img/gal-1-min.jpg" alt="gal-1" title="gal-1" />
             </div>
           </a>
           <a href="#!" class="gallery__link">
             <div class="gallery__pic-wrap">
-              <img class="gallery__pic" src="./img/gal-4.jpg" alt="gal-4" title="gal-4" />
-            </div>
-          </a>
-        </div>
-        <div class="gallery__col">
-          <a href="#!" class="gallery__link">
-            <div class="gallery__pic-wrap">
-              <img class="gallery__pic" src="./img/gal-2.jpg" alt="gal-2" title="gal-2" />
-            </div>
-          </a>
-          <a href="#!" class="gallery__link">
-            <div class="gallery__pic-wrap">
-              <img class="gallery__pic" src="./img/gal-5.jpg" alt="gal-5" title="gal-5" />
-            </div>
-          </a>
-          <a href="#!" class="gallery__link">
-            <div class="gallery__pic-wrap">
-              <img class="gallery__pic" src="./img/gal-6.jpg" alt="gal-6" title="gal-6" />
+              <img class="gallery__pic" src="./img/gal-4-min.jpg" alt="gal-4" title="gal-4" />
             </div>
           </a>
         </div>
         <div class="gallery__col">
           <a href="#!" class="gallery__link">
             <div class="gallery__pic-wrap">
-              <img class="gallery__pic" src="./img/gal-3.jpg" alt="gal-3" title="gal-3" />
+              <img class="gallery__pic" src="./img/gal-2-min.jpg" alt="gal-2" title="gal-2" />
             </div>
           </a>
           <a href="#!" class="gallery__link">
             <div class="gallery__pic-wrap">
-              <img class="gallery__pic" src="./img/gal-7.jpg" alt="gal-7" title="gal-7" />
+              <img class="gallery__pic" src="./img/gal-5-min.jpg" alt="gal-5" title="gal-5" />
+            </div>
+          </a>
+          <a href="#!" class="gallery__link">
+            <div class="gallery__pic-wrap">
+              <img class="gallery__pic" src="./img/gal-6-min.jpg" alt="gal-6" title="gal-6" />
+            </div>
+          </a>
+        </div>
+        <div class="gallery__col">
+          <a href="#!" class="gallery__link">
+            <div class="gallery__pic-wrap">
+              <img class="gallery__pic" src="./img/gal-3-min.jpg" alt="gal-3" title="gal-3" />
+            </div>
+          </a>
+          <a href="#!" class="gallery__link">
+            <div class="gallery__pic-wrap">
+              <img class="gallery__pic" src="./img/gal-7-min.jpg" alt="gal-7" title="gal-7" />
             </div>
           </a>
         </div>
@@ -184,10 +189,10 @@
       <!--CREW SECTION START-->
       <section class="crew container" id="crew">
         <h2 class="title-h2">MEET OUR CREW</h2>
-        <div class="row between">
+        <div class="row around">
           <a href="#!">
             <figure class="crew__card card-crew">
-              <img src="./img/crew-1.jpg" alt="jamie garcia" title="jamie garcia" class="card-crew__pic" />
+              <img src="./img/crew-1-min.jpg" alt="jamie garcia" title="jamie garcia" class="card-crew__pic" />
               <figcaption class="card-crew__body">
                 <p class="card-crew__text">instructor</p>
                 <span class="card-crew__desc">jamie garcia</span>
@@ -196,7 +201,7 @@
           </a>
           <a href="#!"
             ><figure class="crew__card card-crew">
-              <img src="./img/crew-2.jpg" alt="JAMES BILLINGS" title="JAMES BILLINGS" class="card-crew__pic" />
+              <img src="./img/crew-2-min.jpg" alt="JAMES BILLINGS" title="JAMES BILLINGS" class="card-crew__pic" />
               <figcaption class="card-crew__body">
                 <p class="card-crew__text">instructor</p>
                 <span class="card-crew__desc">JAMES BILLINGS</span>
@@ -205,7 +210,7 @@
           >
           <a href="#!"
             ><figure class="crew__card card-crew">
-              <img src="./img/crew-3.jpg" alt="PETER COLINS" title="PETER COLINS" class="card-crew__pic" />
+              <img src="./img/crew-3-min.jpg" alt="PETER COLINS" title="PETER COLINS" class="card-crew__pic" />
               <figcaption class="card-crew__body">
                 <p class="card-crew__text">instructor</p>
                 <span class="card-crew__desc">PETER COLINS</span>
@@ -214,7 +219,7 @@
           >
           <a href="#!"
             ><figure class="crew__card card-crew">
-              <img src="./img/crew-4.jpg" alt="Amanda Lee" title="Amanda Lee" class="card-crew__pic" />
+              <img src="./img/crew-4-min.jpg" alt="Amanda Lee" title="Amanda Lee" class="card-crew__pic" />
               <figcaption class="card-crew__body">
                 <p class="card-crew__text">instructor</p>
                 <span class="card-crew__desc">Amanda Lee</span>
@@ -264,7 +269,7 @@
           <input type="radio" name="slider" title="slide4" class="testimonials__slider-nav" />
           <div class="testimonials__slider-inner">
             <figure class="testimonials__card">
-              <img src="./img/testi-avat.jpg" alt="" class="testimonials__card-ava" />
+              <img src="./img/testi-avat-min.jpg" alt="" class="testimonials__card-ava" />
               <figcaption class="testimonials__card-text">
                 alexa smith
                 <p class="testimonials__desc">
@@ -274,7 +279,7 @@
               </figcaption>
             </figure>
             <figure class="testimonials__card">
-              <img src="./img/crew-1.jpg" alt="" class="testimonials__card-ava" />
+              <img src="./img/crew-1-min.jpg" alt="" class="testimonials__card-ava" />
               <figcaption class="testimonials__card-text">
                 Lorem ipsum
                 <p class="testimonials__desc">
@@ -284,7 +289,7 @@
               </figcaption>
             </figure>
             <figure class="testimonials__card">
-              <img src="./img/crew-2.jpg" alt="" class="testimonials__card-ava" />
+              <img src="./img/crew-2-min.jpg" alt="" class="testimonials__card-ava" />
               <figcaption class="testimonials__card-text">
                 Sit amet consectetur
                 <p class="testimonials__desc">
@@ -294,7 +299,7 @@
               </figcaption>
             </figure>
             <figure class="testimonials__card">
-              <img src="./img/crew-3.jpg" alt="" class="testimonials__card-ava" />
+              <img src="./img/crew-3-min.jpg" alt="" class="testimonials__card-ava" />
               <figcaption class="testimonials__card-text">
                 JAMES BILLINGS
                 <p class="testimonials__desc">
@@ -334,12 +339,16 @@
             <i class="fa fa-clock"></i><span>OPEN HOURS: 8.00 AM – 10.00 PM MONDAY - SUNDAY</span>
           </li>
           <li class="footer__social">
-            <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-f"></i
+            ><i class="fa-brands fa-instagram" aria-hidden="true"></i>
           </li>
         </ul>
       </div>
+      <!-- <div class="map">
+        <img src="./img/map.jpg" alt="Карта" class="map__pic">        
+      </div> -->
       <div class="map">
-
+        <div class="map__pic"></div>
       </div>
     </footer>
     <!--FOOTER SECTION END-->
