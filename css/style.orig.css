@@ -204,7 +204,7 @@ a {
   z-index: 9;
   transition: 0.5s;
   transition-delay: 0.5s;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .header__nav-list {
   display: flex;
